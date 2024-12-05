@@ -1,0 +1,14 @@
+Config:
+    Description: Create Misra Report from Run Coverity to excel report
+    StepDescription:
+        STEP1_1: Build Coverity
+        STEP2_1: Downloader the CSV
+        STEP3_1: Filter the CSV
+        STEP4_1: Convert into Misra Report
+        STEP5_1: Copy into predefined folder
+    ScriptList:
+        STEP1_1_Build_Coverity : testers.Coverity.build_coverity2
+        STEP2_1_Downloader_CSV : testers.Coverity.download_csv_from_coverity
+        STEP3_1_Filter_CSV     : testers.Coverity.filter_csv_by_make_file
+        STEP4_1_MisraReport    : mcal.MisraReport.xlsx_misra_report2
+

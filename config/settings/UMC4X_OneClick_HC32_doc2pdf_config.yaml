@@ -1,0 +1,16 @@
+Config:
+    Description: Create UM for HC32
+    StepDescription:
+        STEP1_1: Convert doc to docx
+        STEP2_1: Accept all changes
+        STEP3_1: Format border and cell margin
+        STEP4_1: Format heading text
+        STEP5_1: Cut Properties
+        STEP6_1: Convert Doc to PDF
+    ScriptList:
+#        STEP1_1_Convert_doc2docx   : parsers.doc2docx.doc2docx
+        STEP2_1_Accept_all_changes   : preparator.accept_all_changes
+        STEP3_1_Format_TableBorder    : formatters.table_border
+        STEP4_1_Format_Heading_Text    : formatters.heading_text
+        STEP5_1_Cutter_Properties    : cutters.AuthorName.doc_properties
+        STEP6_1_Converter_Doc2Pdf    : parsers.doc2pdf.doc2pdf

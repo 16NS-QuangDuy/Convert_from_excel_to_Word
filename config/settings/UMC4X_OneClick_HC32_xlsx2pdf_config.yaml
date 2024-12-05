@@ -1,0 +1,8 @@
+Config:
+    Description: Create UM for HC32
+    StepDescription:
+        STEP1_1: Cut Properties
+        STEP2_1: Convert Doc to PDF
+    ScriptList:
+        STEP1_1_Cutter_Properties    : cutters.AuthorName.xlsx_properties2
+

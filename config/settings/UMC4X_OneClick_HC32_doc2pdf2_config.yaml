@@ -1,0 +1,38 @@
+Config:
+    Description: Create UM for HC32
+    StepDescription:
+        STEP1_1: Convert doc to docx
+        STEP2_1: Accept all changes
+        STEP3_1: Format border and cell margin
+        STEP4_1: Format heading text
+        STEP5_1: Cut Properties
+        STEP6_1: Convert Doc to PDF
+#    StepList: [STEP1_1, STEP2_1, STEP3_1, STEP4_1, STEP5_1, STEP6_1]
+#    StepInputDir:
+#        STEP1_1: Input
+#        STEP2_1: STEP1_1_Convert_doc2docx
+#        STEP3_1: STEP2_1_Accept_all_changes
+#        STEP4_1: STEP3_1_Format_TableBorder
+#        STEP5_1: STEP4_1_Format_Heading_Text
+#        STEP6_1: STEP5_1_Cutter_Properties
+#    StepOutPutDir:
+#        STEP1_1: STEP1_1_Convert_doc2docx
+#        STEP2_1: STEP2_1_Accept_all_changes
+#        STEP3_1: STEP3_1_Format_TableBorder
+#        STEP4_1: STEP4_1_Format_Heading_Text
+#        STEP5_1: STEP5_1_Cutter_Properties
+#        STEP6_1: STEP6_1_Converter_Doc2Pdf
+#    ScriptList:
+#        STEP1_1: parsers.doc2docx.doc2docx
+#        STEP2_1: preparator.accept_all_changes
+#        STEP3_1: formatters.table_border
+#        STEP4_1: formatters.heading_text
+#        STEP5_1: cutters.AuthorName.doc_properties
+#        STEP6_1: parsers.doc2pdf.doc2pdf
+    ScriptList:
+#        STEP1_1_Convert_doc2docx   : parsers.doc2docx.doc2docx
+        STEP2_1_Accept_all_changes   : preparator.accept_all_changes
+        STEP3_1_Format_TableBorder    : formatters.table_border
+        STEP4_1_Format_Heading_Text    : formatters.heading_text
+        STEP5_1_Cutter_Properties    : cutters.AuthorName.doc_properties
+        STEP6_1_Converter_Doc2Pdf    : parsers.doc2pdf.doc2pdf

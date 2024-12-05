@@ -1,0 +1,27 @@
+--- 
+#Configuration of Target Spec
+YamlML:
+    NdisclosedDict:
+        Key: Ndisclosed
+        Value: Non-disclosed
+    BitPositionDict:
+        Key: Bit
+        Value: Bit
+    RegisterDescriptionTableDict:
+        IndentDict:
+            Registers: 1
+            Name: 2
+            Desc: 2
+            Bits: 2
+            Bit: 3 
+            Annotation: 2
+            Caution: 2
+            Ndisclosed: 2
+            GroupOffset: 2
+            Bitfields: 2
+            Note: 2
+    RegisterConfigurationTableDict:
+        IndentDict:         
+            Registers: 1
+            Register: 2
+            config: 3

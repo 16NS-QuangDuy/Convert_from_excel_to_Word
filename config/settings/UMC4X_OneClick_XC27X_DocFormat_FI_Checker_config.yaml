@@ -1,0 +1,12 @@
+Config:
+    Description: DocFormatFIChecker
+    StepDescription:
+        STEP1_1: Check font name
+    ScriptList:
+         STEP1_1_FontNameChecker            :
+         - checkers.DocFormat.CheckFontName
+         - checkers.DocFormat.CheckFontSize
+         - checkers.DocFormat.CheckCJK
+         - checkers.DocFormat.BrokenCR
+         - checkers.DocFormat.BlankTableRow
+

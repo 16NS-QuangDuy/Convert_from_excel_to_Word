@@ -1,0 +1,18 @@
+Worker:
+    input_list: []
+    display: Yes
+    input_dir:
+    config_file:
+    output_dir:
+    report_dir:
+    working_ts_list:
+    database_dir:
+    worker_list:
+    auto_task_name:
+    track_change:
+    input_data_items:
+    create_ts:
+    create_um:
+    MultipleInput:
+    CustomInputDir:
+    CustomOutputDir:

@@ -1,0 +1,13 @@
+Config:
+    Description: Create Test Project then build and run and create report
+    StepDescription:
+        STEP1: Create EB Projects and IAR project
+        STEP2: Build EB Project and IAR projects then debug then create reports
+    ScriptList:
+        STEP1_Create_Build_Run_IT:
+            - testers.ATS.create_test_quality_report
+            - testers.ATS.collect_log
+        STEP2_Create_Test_Quality_Report:
+            - testers.ATS.collect_report
+
+

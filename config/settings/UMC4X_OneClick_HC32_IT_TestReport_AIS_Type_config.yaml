@@ -1,0 +1,16 @@
+Config:
+    Description: Create Test Project then build and run and create report
+    StepDescription:
+        STEP1: Create EB Projects and IAR project
+        STEP2: Build EB Project and IAR projects then debug then create reports
+    ScriptList:
+        STEP1_Create_Build_Run_IT:
+            - testers.ATS.copy_test_data
+            - testers.update_project_settings
+            - testers.ATS.run_ATS_IT
+            - testers.ATS.collect_log
+        STEP2_Create_Test_Quality_Report:
+            - testers.ATS.collect_report
+            - uploader.confluence.upload_test_quality_report
+
+

@@ -1,0 +1,12 @@
+Config:
+    Description: Create EB VSMD Report for HC32
+    StepDescription:
+        STEP1: Close Tresos GUI and Build Tresos Plugins
+        STEP2: Check plugins with checkers and testers
+    ScriptList:
+        STEP1_Download_Plugins   :
+        - uploader.confluence.download_confluence
+        STEP2_Process   :
+        - mcal.VSMDChecker.check_Vsmd_modules
+        STEP3_Upload_Output   :
+        - uploader.confluence.upload_confluence

@@ -1,0 +1,12 @@
+Config:
+    Description: Create StackSize Report
+    StepDescription:
+        STEP1_1: Build IAR
+        STEP2_1: Parse call graph file
+        STEP3_1: Filter the xlsx
+    ScriptList:
+#        STEP1_1_Build_Coverity : testers.IAR.bui
+        STEP2_1_CallGraph_Parser : mcal.StackSizeReport.xlsx_stacksize_report
+        STEP3_1_Filter_Xlsx     : mcal.StackSizeReport.filter_xlsx_by_make_file
+
+

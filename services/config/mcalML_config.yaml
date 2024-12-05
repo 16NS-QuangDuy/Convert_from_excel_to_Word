@@ -1,0 +1,29 @@
+McalML:
+    ModuleList:
+    - RESOURCE
+    - SYSTEM
+    - COMMON
+    - DIO
+    - WDG
+    - PORT
+    - GPT
+    - UART
+    - I2C
+    - MCU
+    - CAN
+    - Dem
+    - EcuC
+    - Det
+    - Memif
+    - Rte
+    - OS
+    - EcuM
+    - WDGIF
+    - CANIF
+    - PWM
+    - SPI
+    - FLS
+    - ADC
+    - LIN
+    - ICU
+    - LINIF

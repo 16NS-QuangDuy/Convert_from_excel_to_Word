@@ -1,0 +1,22 @@
+Config:
+    Description: Create release package
+    StepDescription:
+        STEP1: Create Quality Package Development Package
+        STEP2: Check the package
+    ScriptList:
+        STEP1_Quality_Development_Replacer :
+        - replacer.quality_package_files.quality_package_file3
+#        - replacer.quality_package_files.development_package_file
+#        Safety Package
+        - replacer.quality_package_files.development_package_file3
+        STEP2_Quality_Development_Checker:
+#        - uploader.create_zip_package
+#        - uploader.confluence.upload_release_package2
+        - checkers.Structure.check_quality_package
+        - checkers.IPViolations.IPViolations
+        - checkers.Structure.check_deliverabes_location_nam2
+#        - checkers.Structure.check_ADL.py
+#        - checkers.Structure.check_ADL1.py
+#        - checkers.WrongName.WrongName2
+#        - uploader.confluence.upload_release_package
+

@@ -1,0 +1,41 @@
+--- 
+# This is configuration for WordML
+WordML:
+    LevelDict:
+        level1: ["Heading1", "Heading 1"]
+        level2: ["Heading2", "Heading 2"]
+        level3: ["Heading3", "Heading 3"]
+        level4: ["Heading4", "Heading 4"]
+        level5: ["Heading5", "Heading 5"]
+        level6: ["Heading6", "Heading 6"]
+        level7: ["Heading7", "Heading 7"]
+        level8: ["Heading8", "Heading 8"]
+        level9: ["Heading9", "Heading 9"]
+    LevelList: |
+        ["level1", "level2", "level3", "level4", "level5", "level6", "level7", "level8", "level9"]
+    IndentPrefix: "  "
+    PreservedText: " "
+    LevelIndentDict: 
+        level1: 0
+        level2: 1
+        level3: 2
+        level4: 3
+        level5: 4
+        level6: 5
+        level7: 6
+        level8: 7
+        level9: 8
+    NumberingLevelList: |
+        ["level1", "level2", "level3", "level4", "level5", "level6"]
+    LevelNumberDict:
+        "level1": "1"
+        "level2": "2"
+        "level3": "3"
+        "level4": "4"
+        "level5": "5"
+        "level6": "6"
+        "level7": "7"
+        "level8": "8"
+        "level9": "9"
+        "levelA": "A"
+    NumberingType: "COMPARE"

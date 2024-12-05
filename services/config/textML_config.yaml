@@ -1,0 +1,5 @@
+--- 
+# This is configuration for WordML
+TextML:
+    format_camelcase:
+        ignore_list: ['in', 'on', 'the']

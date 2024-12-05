@@ -1,0 +1,14 @@
+Config:
+    Description: Create UM for HC32
+    StepDescription:
+        STEP1_1: Accept all changes
+        STEP2_1: Standardize Heading
+        STEP2_2: Standardize Table
+        STEP3_1: Cut Blank Pages
+        STEP4_1: Convert Doc to PDF
+    ScriptList:
+        STEP1_1_Accept_all_changes   : preparator.accept_all_changes
+        STEP1_1_Formater_HeadingText : formatters.standardizing_heading_HC32
+        STEP2_2_Formater_Table       : formatters.standardizing_table
+        STEP3_1_Cutter_BlankPages    : cutters.word.blankpages
+        STEP4_1_Converter_Doc2Pdf    : parsers.doc2pdf.doc2pdf

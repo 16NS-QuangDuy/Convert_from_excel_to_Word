@@ -1,0 +1,20 @@
+Config:
+    Description: Create EB Plugins for HC32
+    StepDescription:
+        STEP1_1: Close Tresos GUI an dBuild Tresos Plugins
+        STEP2_1: Check plugins with checkers and testers
+    ScriptList:
+        STEP1_1_BuildEBPlugins   :
+        - testers.EBTresos.build_EB_plugins2
+        STEP2_1_EBPluginsCheckerTester   :
+            - checkers.version.CompareVersionDocPdf
+            - testers.EBTresos.upload_eb_tresos_plugin2
+            - testers.IAR.build_IAR_examples
+            - mcal.VSMDChecker.check_Vsmd
+            - checkers.CodeFormat.CodeFormat
+            - checkers.Structure.check_EB_plugins
+#            - checkers.Missing.MissingCompilerOption2
+#            - checkers.WrongName.WrongName2
+            - checkers.IPViolations.IPViolations2
+            - testers.EBTresos.upload_eb_tresos_plugin
+
